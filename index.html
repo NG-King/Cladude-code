@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>林雅晴 · 室內設計</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">林雅晴</div>
+    <ul class="nav-links">
+      <li><a href="#about">關於</a></li>
+      <li><a href="#services">服務</a></li>
+      <li><a href="#portfolio">作品</a></li>
+      <li><a href="#process">流程</a></li>
+      <li><a href="#contact">聯絡</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="menu">&#9776;</button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu">
+    <button class="close-btn" aria-label="close">&#10005;</button>
+    <ul>
+      <li><a href="#about">關於</a></li>
+      <li><a href="#services">服務</a></li>
+      <li><a href="#portfolio">作品</a></li>
+      <li><a href="#process">流程</a></li>
+      <li><a href="#contact">聯絡</a></li>
+    </ul>
+  </div>
+  <div id="menu-overlay"></div>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">Interior Design Studio</p>
+      <h1>打造屬於你的<br /><em>生活美學</em></h1>
+      <p class="hero-sub">每一個空間，都是一段生活故事的開始</p>
+      <a href="#portfolio" class="btn-primary">探索作品</a>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="stat">
+        <span class="stat-num" data-target="87">0</span>
+        <span class="stat-unit">+</span>
+        <p>完成案件</p>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="12">0</span>
+        <span class="stat-unit">年</span>
+        <p>設計經驗</p>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="96">0</span>
+        <span class="stat-unit">%</span>
+        <p>客戶滿意度</p>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="8">0</span>
+        <span class="stat-unit">項</span>
+        <p>設計獎項</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-image">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80" alt="林雅晴設計師" />
+        </div>
+        <div class="about-badge">
+          <span>2014</span>
+          <p>創立工作室</p>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-label">ABOUT ME</span>
+        <h2>空間，是生活<br />最誠實的自白</h2>
+        <p>我是林雅晴，一位專注於住宅與商業空間設計的室內設計師。畢業於實踐大學室內設計系，並取得英國 AA School 進修認證，擁有超過 12 年的設計實務經驗。</p>
+        <p>我相信每一個空間都應該反映居住者真實的生活方式與個性。我的設計哲學是以人為本——先深入了解業主的生活習慣、美學偏好，再以此為核心展開設計語彙。</p>
+        <div class="about-skills">
+          <div class="skill-tag">現代簡約</div>
+          <div class="skill-tag">北歐風格</div>
+          <div class="skill-tag">日式侘寂</div>
+          <div class="skill-tag">工業混搭</div>
+          <div class="skill-tag">奢華古典</div>
+        </div>
+        <a href="#contact" class="btn-outline">與我合作</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="section-header">
+      <span class="section-label">SERVICES</span>
+      <h2>設計服務</h2>
+      <p>從概念發想到竣工驗收，全程陪伴每一個細節</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">&#9633;</div>
+        <h3>住宅設計</h3>
+        <p>公寓、透天、豪宅全屋規劃，依業主生活動線量身打造獨一無二的家。</p>
+        <ul>
+          <li>空間格局規劃</li>
+          <li>材質與色彩搭配</li>
+          <li>家具軟裝選配</li>
+          <li>施工監管</li>
+        </ul>
+      </div>
+      <div class="service-card featured">
+        <div class="service-icon">&#9671;</div>
+        <h3>商業空間</h3>
+        <p>辦公室、餐廳、品牌門市，將品牌精神轉化為空間語言，提升場域體驗。</p>
+        <ul>
+          <li>品牌空間定位</li>
+          <li>動線體驗設計</li>
+          <li>燈光情境規劃</li>
+          <li>工程統包服務</li>
+        </ul>
+        <span class="featured-badge">最受歡迎</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">&#9675;</div>
+        <h3>空間諮詢</h3>
+        <p>已有裝潢但想局部調整？提供單次或多次軟裝諮詢，以最低成本提升空間質感。</p>
+        <ul>
+          <li>色彩搭配建議</li>
+          <li>家具重新佈局</li>
+          <li>軟裝採購清單</li>
+          <li>線上視訊諮詢</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <div class="section-header">
+      <span class="section-label">PORTFOLIO</span>
+      <h2>精選作品</h2>
+      <p>每一個案件，都是一次關於生活的深刻對話</p>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="residential">住宅</button>
+      <button class="filter-btn" data-filter="commercial">商業</button>
+      <button class="filter-btn" data-filter="renovation">翻新</button>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-item" data-category="residential" data-index="0">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80" alt="大安區現代公寓" />
+          <div class="portfolio-overlay">
+            <button class="view-btn" data-index="0">查看詳情</button>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">住宅</span>
+          <h3>台北大安 · 現代簡約公寓</h3>
+          <p>56坪 · 三房兩廳 · 2024</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item large" data-category="commercial" data-index="1">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="信義商務辦公室" />
+          <div class="portfolio-overlay">
+            <button class="view-btn" data-index="1">查看詳情</button>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">商業</span>
+          <h3>信義區 · 科技公司總部</h3>
+          <p>320坪 · 開放辦公 · 2024</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="residential" data-index="2">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80" alt="天母北歐住宅" />
+          <div class="portfolio-overlay">
+            <button class="view-btn" data-index="2">查看詳情</button>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">住宅</span>
+          <h3>天母 · 北歐風格透天</h3>
+          <p>82坪 · 四房三廳 · 2023</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="renovation" data-index="3">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1583845112239-97ef1341b271?w=800&q=80" alt="中山日式茶屋" />
+          <div class="portfolio-overlay">
+            <button class="view-btn" data-index="3">查看詳情</button>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">翻新</span>
+          <h3>中山區 · 日式侘寂茶空間</h3>
+          <p>28坪 · 老屋翻新 · 2023</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item large" data-category="residential" data-index="4">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=800&q=80" alt="大直親子空間" />
+          <div class="portfolio-overlay">
+            <button class="view-btn" data-index="4">查看詳情</button>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">住宅</span>
+          <h3>大直 · 親子友善溫馨宅</h3>
+          <p>45坪 · 三房 · 2023</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="commercial" data-index="5">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&q=80" alt="松山工業風餐廳" />
+          <div class="portfolio-overlay">
+            <button class="view-btn" data-index="5">查看詳情</button>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">商業</span>
+          <h3>松山區 · 工業風義式餐廳</h3>
+          <p>65坪 · 80席 · 2022</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close">&#10005;</button>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img id="modal-img" src="" alt="" />
+        </div>
+        <div class="modal-info">
+          <span id="modal-tag" class="portfolio-tag"></span>
+          <h2 id="modal-title"></h2>
+          <div class="modal-meta">
+            <div><label>地點</label><span id="modal-location"></span></div>
+            <div><label>坪數</label><span id="modal-size"></span></div>
+            <div><label>完工年份</label><span id="modal-year"></span></div>
+            <div><label>設計風格</label><span id="modal-style"></span></div>
+          </div>
+          <p id="modal-desc"></p>
+          <div class="modal-tags" id="modal-features"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Process -->
+  <section id="process">
+    <div class="section-header light">
+      <span class="section-label">PROCESS</span>
+      <h2>設計流程</h2>
+      <p>清晰透明的合作流程，讓每一步都安心</p>
+    </div>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <h3>初次諮詢</h3>
+          <p>深入了解您的生活需求、美學偏好與預算規劃，確立設計方向。</p>
+        </div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <h3>概念提案</h3>
+          <p>提供空間概念圖、色彩計畫與材質板，呈現完整設計願景。</p>
+        </div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <h3>施工設計圖</h3>
+          <p>出具詳細施工圖說、3D 效果圖，確認每一個細節無誤。</p>
+        </div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <h3>施工監管</h3>
+          <p>全程監督工程進度，定期回報進度，確保設計如實呈現。</p>
+        </div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <div class="step-content">
+          <h3>竣工驗收</h3>
+          <p>完工後陪同驗屋，軟裝擺設到位，交出完美的夢想空間。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <div class="section-header">
+      <span class="section-label">TESTIMONIALS</span>
+      <h2>業主心聲</h2>
+    </div>
+    <div class="testimonials-track">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>「雅晴非常善於傾聽，把我說不清楚的感覺轉化成具體的設計。新家完工後每天回家都很開心，感覺就像住在雜誌裡。」</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">陳</div>
+          <div>
+            <strong>陳怡君</strong>
+            <span>大安區公寓業主</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>「我們公司辦公室從傳統格局改造成開放空間後，員工工作效率明顯提升，來訪客戶也對環境印象深刻。CP值極高！」</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">李</div>
+          <div>
+            <strong>李建宏</strong>
+            <span>科技新創公司 CEO</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>「老屋翻新是大工程，但雅晴讓整個過程很順暢。她對細節的堅持讓我很放心，30年的老房子現在煥然一新，朋友都認不出來。」</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">王</div>
+          <div>
+            <strong>王志明</strong>
+            <span>中山區老屋翻新業主</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>「我有兩個小孩，很擔心空間不夠用也不安全。雅晴幫我們規劃了非常聰明的收納系統，孩子也有自己的玩耍角落，太厲害了！」</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">張</div>
+          <div>
+            <strong>張美玲</strong>
+            <span>大直親子宅業主</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section id="awards">
+    <div class="awards-container">
+      <div class="section-header">
+        <span class="section-label">AWARDS</span>
+        <h2>獎項與認可</h2>
+      </div>
+      <div class="awards-grid">
+        <div class="award-item">
+          <span class="award-year">2024</span>
+          <h4>台灣室內設計大獎</h4>
+          <p>住宅空間類 — 金獎</p>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2023</span>
+          <h4>Asia Pacific Interior Design Awards</h4>
+          <p>Commercial Category — Silver</p>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2023</span>
+          <h4>金點設計獎</h4>
+          <p>空間設計類 — 入圍</p>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2022</span>
+          <h4>TID Award</h4>
+          <p>住宅空間類 — 優選</p>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2021</span>
+          <h4>台灣室內設計大獎</h4>
+          <p>商業空間類 — 銀獎</p>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2020</span>
+          <h4>iF Design Award</h4>
+          <p>Interior Architecture</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <span class="section-label">CONTACT</span>
+        <h2>讓我們開始<br />你的空間故事</h2>
+        <p>無論是新居設計、商業空間或老屋翻新，歡迎與我分享你的夢想，讓我們一起把它變成現實。</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-icon">✉</span>
+            <span>hello@linyaching-design.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✆</span>
+            <span>02-2345-6789</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">◎</span>
+            <span>台北市大安區仁愛路四段 100 號 8F</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">◷</span>
+            <span>週一至週五 10:00 – 18:00</span>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Houzz">HZ</a>
+          <a href="#" aria-label="Pinterest">PT</a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">姓名 *</label>
+            <input type="text" id="name" name="name" placeholder="您的姓名" required />
+          </div>
+          <div class="form-group">
+            <label for="email">電子信箱 *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">聯絡電話</label>
+            <input type="tel" id="phone" name="phone" placeholder="09xx-xxx-xxx" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="project-type">案件類型 *</label>
+              <select id="project-type" name="project-type" required>
+                <option value="">請選擇</option>
+                <option value="residential">住宅設計</option>
+                <option value="commercial">商業空間</option>
+                <option value="renovation">老屋翻新</option>
+                <option value="consultation">空間諮詢</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">預算範圍</label>
+              <select id="budget" name="budget">
+                <option value="">請選擇</option>
+                <option value="under100">100 萬以下</option>
+                <option value="100-300">100 – 300 萬</option>
+                <option value="300-600">300 – 600 萬</option>
+                <option value="over600">600 萬以上</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">需求說明 *</label>
+            <textarea id="message" name="message" rows="4" placeholder="請簡單描述您的空間需求、期待風格或任何想法…" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">送出諮詢</button>
+          <div id="form-success" class="form-success hidden">
+            <span>✓</span> 感謝您的訊息！我將在 2 個工作天內與您聯繫。
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <p class="footer-logo">林雅晴 室內設計</p>
+        <p class="footer-en">Ya-Ching Lin Interior Design Studio</p>
+        <p class="footer-copy">© 2026 林雅晴室內設計工作室。保留所有權利。</p>
+      </div>
+      <div class="footer-nav">
+        <a href="#about">關於我</a>
+        <a href="#services">服務項目</a>
+        <a href="#portfolio">作品集</a>
+        <a href="#contact">聯絡我</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
