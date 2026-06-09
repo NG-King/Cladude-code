@@ -1,0 +1,80 @@
+{
+  "$schema": "Agent Output Schema v2",
+  "description": "所有 agents 的標準輸出格式，確保 Merger 可統一處理",
+
+  "space_designer_output": {
+    "layout": "",
+    "flow": "",
+    "zones": [
+      {"name": "", "size_ratio": 0, "function": ""}
+    ],
+    "display_nodes": [],
+    "keywords": []
+  },
+
+  "vm_designer_output": {
+    "vm_strategy": "",
+    "hero_zone": "",
+    "product_hierarchy": {
+      "high": "",
+      "eye": "",
+      "low": ""
+    },
+    "focal_points": [],
+    "photo_spots": []
+  },
+
+  "cost_estimator_output": {
+    "breakdown": {
+      "demolition": 0,
+      "woodwork": 0,
+      "paint": 0,
+      "lighting": 0,
+      "props": 0,
+      "graphics": 0
+    },
+    "total_range": {
+      "low": 0,
+      "mid": 0,
+      "high": 0
+    },
+    "optimization_suggestions": []
+  },
+
+  "project_manager_output": {
+    "timeline": [
+      {"phase": "", "days": 0, "tasks": [], "owner": ""}
+    ],
+    "risks": [
+      {"description": "", "impact": "high | medium | low", "mitigation": ""}
+    ],
+    "dependencies": []
+  },
+
+  "material_consultant_output": {
+    "material_list": [
+      {"zone": "", "material": "", "surface": "", "durability": "", "cost_level": "low | mid | high"}
+    ],
+    "alternatives": [],
+    "cost_impact": ""
+  },
+
+  "brand_strategist_output": {
+    "brand_concept": "",
+    "emotional_keywords": [],
+    "experience_flow": {
+      "entry": "",
+      "exploration": "",
+      "peak": "",
+      "exit": ""
+    },
+    "memory_points": []
+  },
+
+  "cad_reviewer_output": {
+    "critical": [],
+    "warnings": [],
+    "suggestions": [],
+    "risks": []
+  }
+}

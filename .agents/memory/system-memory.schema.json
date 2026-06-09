@@ -1,0 +1,43 @@
+{
+  "$schema": "System Memory Schema v2",
+  "description": "全局系統記憶，追蹤所有 agent 執行日誌與系統學習",
+
+  "agent_logs": [
+    {
+      "timestamp": "",
+      "agent": "space_designer | vm_designer | cost_estimator | ...",
+      "project_id": "",
+      "input": "",
+      "output": "",
+      "decision": "",
+      "confidence": 0.0,
+      "duration_ms": 0
+    }
+  ],
+
+  "performance_metrics": {
+    "avg_confidence_by_agent": {},
+    "common_revision_reasons": [],
+    "most_used_agents": []
+  },
+
+  "learned_patterns": [
+    {
+      "pattern": "",
+      "context": "",
+      "recommendation": "",
+      "frequency": 0
+    }
+  ],
+
+  "market_data": {
+    "last_updated": "",
+    "material_prices": {},
+    "labor_rates": {
+      "region": "Taiwan",
+      "woodwork_per_sqm": 0,
+      "lighting_per_point": 0,
+      "paint_per_sqm": 0
+    }
+  }
+}

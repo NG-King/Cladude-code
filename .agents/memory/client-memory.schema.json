@@ -1,0 +1,36 @@
+{
+  "$schema": "Client Memory Schema v2",
+  "description": "客戶層記憶，跨專案追蹤偏好、決策模式、品牌規範",
+
+  "client_id": "",
+  "brand": "",
+  "industry": "",
+  "contact": "",
+
+  "brand_guidelines": {
+    "colors": [],
+    "fonts": [],
+    "logo_rules": [],
+    "forbidden": []
+  },
+
+  "preferences": {
+    "style_keywords": [],
+    "preferred_materials": [],
+    "budget_sensitivity": "high | medium | low",
+    "decision_speed": "fast | medium | slow",
+    "communication_style": "formal | casual"
+  },
+
+  "project_history": [
+    {
+      "project_id": "",
+      "type": "",
+      "year": 0,
+      "outcome": "success | revision | cancelled"
+    }
+  ],
+
+  "recurring_constraints": [],
+  "notes": ""
+}

@@ -1,0 +1,89 @@
+{
+  "$schema": "Project Memory Schema v2",
+  "description": "單一專案的完整記憶結構，追蹤所有設計決策、成本歷史、時程變更",
+
+  "project_id": "",
+  "brand": "",
+  "type": "popup_store | department | exhibition | brand_space",
+  "status": "planning | in_progress | completed",
+  "created_at": "",
+  "updated_at": "",
+
+  "brief": {
+    "location": "",
+    "size_sqm": 0,
+    "budget_ntd": 0,
+    "deadline": "",
+    "raw_input": ""
+  },
+
+  "design_history": [
+    {
+      "version": 1,
+      "timestamp": "",
+      "agent": "space-designer",
+      "concept": "",
+      "changes": []
+    }
+  ],
+
+  "decisions": [
+    {
+      "id": "",
+      "timestamp": "",
+      "category": "design | cost | material | timeline",
+      "decision": "",
+      "reason": "",
+      "confirmed_by": "client | designer | system"
+    }
+  ],
+
+  "constraints": [
+    {
+      "type": "budget | space | regulation | brand",
+      "description": "",
+      "impact": "high | medium | low"
+    }
+  ],
+
+  "assets": [
+    {
+      "type": "moodboard | cad | proposal | photo",
+      "name": "",
+      "url": "",
+      "created_at": ""
+    }
+  ],
+
+  "cost_history": [
+    {
+      "version": 1,
+      "timestamp": "",
+      "total_low": 0,
+      "total_mid": 0,
+      "total_high": 0,
+      "breakdown": {
+        "woodwork": 0,
+        "lighting": 0,
+        "graphics": 0,
+        "demolition": 0,
+        "paint": 0,
+        "props": 0
+      }
+    }
+  ],
+
+  "timeline_history": [
+    {
+      "version": 1,
+      "timestamp": "",
+      "phases": [
+        {"phase": "design", "days": 7, "start": "", "end": ""},
+        {"phase": "confirmation", "days": 3, "start": "", "end": ""},
+        {"phase": "production", "days": 14, "start": "", "end": ""},
+        {"phase": "installation", "days": 3, "start": "", "end": ""},
+        {"phase": "handover", "days": 1, "start": "", "end": ""}
+      ]
+    }
+  ]
+}

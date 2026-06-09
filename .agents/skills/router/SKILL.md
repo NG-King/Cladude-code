@@ -1,51 +1,78 @@
 ---
 name: router
-description: 決定哪些 agents 要被啟動的 Router Agent。依關鍵字匹配 agents、去除重複、優化執行成本。輸出 Active Agents、Execution Mode（parallel/sequential）、Priority Order。
+description: Router Agent v2。接收 Planner 的 Task Graph，進行 dependency check、parallel grouping、cost/time optimization，輸出可執行的 parallel_groups + sequential_chain + priority_weights。
 ---
 
-# Router Agent
+# Router Agent v2
 
 ## Role
-決定哪些 agents 要被啟動
+將 Task Graph 轉換為可執行的調度計劃
 
 ## Input
-Planner 的輸出（Task List + Required Agents）
+Planner 的 Task Graph（nodes + edges）
 
 ## Core Logic
-- Match keywords → agents
-- Remove redundancy
-- Optimize execution cost
+- Dependency check：分析哪些節點有前置依賴
+- Parallel grouping：無依賴關係的節點歸為同一 group
+- Cost/time optimization：優先執行耗時長的任務
 
 ## Routing Table
 
-| Keyword | Agent |
-|---------|-------|
-| 空間 / 動線 / layout / 商空 / 快閃 / 專櫃 | Space Designer |
-| VM / 陳列 / 視覺 / 展示 / retail / shelf | VM Designer |
-| 價格 / cost / 預算 / 報價 / 工程 / 估價 | Cost Estimator |
-| CAD / 圖面 / 施工圖 / 尺寸 / drawing | CAD Reviewer |
-| 工期 / schedule / timeline / project / 進度 | Project Manager |
-| 材料 / material / 木作 / 金屬 / 表面 / texture | Material Consultant |
-| 品牌 / brand / 策略 / 定位 / concept | Brand Strategist |
+| Node | Agent | Avg Time |
+|------|-------|----------|
+| brand_analysis | brand-strategist | fast |
+| space_design | space-designer | medium |
+| vm_design | vm-designer | medium |
+| cost_estimation | cost-estimator | medium |
+| material_selection | material-consultant | fast |
+| project_schedule | project-manager | fast |
+| cad_review | cad-reviewer | slow |
 
 ## Output Schema
 
-```
-Active Agents: [list]
-
-Execution Mode:
-- Parallel Group 1: [agents]
-- Parallel Group 2: [agents]
-- Sequential after Group 1: [agents]
-
-Priority Order:
-1. [agent]
-2. [agent]
-...
+```json
+{
+  "parallel_groups": [
+    {
+      "group_id": 1,
+      "agents": ["brand-strategist"],
+      "can_start": "immediately"
+    },
+    {
+      "group_id": 2,
+      "agents": ["space-designer"],
+      "can_start": "after_group_1"
+    },
+    {
+      "group_id": 3,
+      "agents": ["vm-designer", "cost-estimator", "material-consultant"],
+      "can_start": "after_group_2"
+    },
+    {
+      "group_id": 4,
+      "agents": ["project-manager"],
+      "can_start": "after_group_3"
+    }
+  ],
+  "sequential_chain": [
+    "brand-strategist",
+    "space-designer",
+    ["vm-designer", "cost-estimator", "material-consultant"],
+    "project-manager"
+  ],
+  "priority_weights": {
+    "brand-strategist": 1.0,
+    "space-designer": 0.95,
+    "cost-estimator": 0.9,
+    "vm-designer": 0.85,
+    "material-consultant": 0.8,
+    "project-manager": 0.75
+  }
+}
 ```
 
 ## Constraints
-不產生任何內容 / 只做路由決策
+不產生任何設計/估算內容 / 只做調度決策
 
 ## Keywords (Routing用)
-（由系統自動觸發，不需要關鍵字）
+（系統自動觸發，為 pipeline 第二步）
