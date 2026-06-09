@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>住家案件 · 林雅晴室內設計</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">林雅晴</a>
+    <ul class="nav-links">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="about.html">關於</a></li>
+      <li><a href="residential.html" class="active">住家案件</a></li>
+      <li><a href="commercial.html">商業案件</a></li>
+      <li><a href="pricing.html">收費標準</a></li>
+      <li><a href="index.html#contact" class="nav-cta">聯絡我</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="menu">&#9776;</button>
+  </nav>
+  <div id="mobile-menu">
+    <button class="close-btn">&#10005;</button>
+    <ul>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="about.html">關於</a></li>
+      <li><a href="residential.html">住家案件</a></li>
+      <li><a href="commercial.html">商業案件</a></li>
+      <li><a href="pricing.html">收費標準</a></li>
+      <li><a href="index.html#contact">聯絡我</a></li>
+    </ul>
+  </div>
+  <div id="menu-overlay"></div>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1600&q=80')">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="section-label">RESIDENTIAL</span>
+      <h1>住家案件</h1>
+      <p>讓家成為你最想回去的地方</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="portfolio-intro">
+    <div class="portfolio-intro-inner">
+      <p>每一個家都有它獨特的故事與個性。我擅長從業主的生活方式出發，規劃出既美觀又符合實際居住需求的住宅空間，從新成屋到老屋翻新，全程陪伴。</p>
+      <div class="intro-stats">
+        <div><strong>54</strong><span>件住宅案</span></div>
+        <div><strong>15 – 120</strong><span>坪設計範疇</span></div>
+        <div><strong>新成屋 · 預售屋 · 老屋翻新</strong><span>皆可承接</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter + Grid -->
+  <section id="portfolio">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="modern">現代簡約</button>
+      <button class="filter-btn" data-filter="nordic">北歐風格</button>
+      <button class="filter-btn" data-filter="japanese">日式侘寂</button>
+      <button class="filter-btn" data-filter="renovation">老屋翻新</button>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-item large" data-category="modern" data-index="0">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=80" alt="大安現代公寓" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="0">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">現代簡約</span>
+          <h3>台北大安 · 現代簡約公寓</h3>
+          <p>56坪 · 三房兩廳 · 2024</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="nordic" data-index="1">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700&q=80" alt="天母北歐透天" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="1">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">北歐風格</span>
+          <h3>天母 · 北歐風格透天</h3>
+          <p>82坪 · 四房三廳 · 2023</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="modern" data-index="2">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=700&q=80" alt="大直親子宅" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="2">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">溫馨現代</span>
+          <h3>大直 · 親子友善溫馨宅</h3>
+          <p>45坪 · 三房 · 2023</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="japanese" data-index="3">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1583845112239-97ef1341b271?w=700&q=80" alt="中山日式" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="3">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">日式侘寂</span>
+          <h3>中山區 · 日式侘寂茶空間</h3>
+          <p>28坪 · 老屋翻新 · 2023</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item large" data-category="nordic" data-index="4">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900&q=80" alt="內湖北歐宅" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="4">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">北歐風格</span>
+          <h3>內湖 · 輕北歐單身公寓</h3>
+          <p>22坪 · 一房一廳 · 2022</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="renovation" data-index="5">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=700&q=80" alt="信義老屋翻新" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="5">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">老屋翻新</span>
+          <h3>信義區 · 25 年老公寓再生</h3>
+          <p>38坪 · 兩房 · 2022</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="modern" data-index="6">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=700&q=80" alt="南港豪宅" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="6">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">現代奢華</span>
+          <h3>南港 · 輕奢現代豪宅</h3>
+          <p>120坪 · 五房 · 2022</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="japanese" data-index="7">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=700&q=80" alt="木柵日式宅" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="7">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">日式和風</span>
+          <h3>木柵 · 和風靜謐山居</h3>
+          <p>65坪 · 透天改造 · 2021</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="renovation" data-index="8">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" alt="大同老宅" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="8">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">老屋翻新</span>
+          <h3>大同區 · 40 年老宅重生</h3>
+          <p>42坪 · 三代同堂 · 2021</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close">&#10005;</button>
+      <div class="modal-body">
+        <div class="modal-gallery"><img id="modal-img" src="" alt="" /></div>
+        <div class="modal-info">
+          <span id="modal-tag" class="portfolio-tag"></span>
+          <h2 id="modal-title"></h2>
+          <div class="modal-meta">
+            <div><label>地點</label><span id="modal-location"></span></div>
+            <div><label>坪數</label><span id="modal-size"></span></div>
+            <div><label>完工年份</label><span id="modal-year"></span></div>
+            <div><label>設計風格</label><span id="modal-style"></span></div>
+          </div>
+          <p id="modal-desc"></p>
+          <div class="modal-tags" id="modal-features"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section id="about-cta">
+    <div class="simple-cta">
+      <h2>打造屬於你的理想住家</h2>
+      <p>預約免費初次諮詢，讓我了解你的需求</p>
+      <div class="cta-btns">
+        <a href="pricing.html" class="btn-primary">查看收費標準</a>
+        <a href="index.html#contact" class="btn-outline">預約諮詢</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <p class="footer-logo">林雅晴 室內設計</p>
+        <p class="footer-en">Ya-Ching Lin Interior Design Studio</p>
+        <p class="footer-copy">© 2026 林雅晴室內設計工作室。保留所有權利。</p>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於</a>
+        <a href="residential.html">住家案件</a>
+        <a href="commercial.html">商業案件</a>
+        <a href="pricing.html">收費標準</a>
+        <a href="index.html#contact">聯絡</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const projects = [
+      { title:'台北大安 · 現代簡約公寓', tag:'現代簡約', location:'台北市大安區', size:'56 坪', year:'2024', style:'現代簡約', img:'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80', desc:'業主是一對年輕夫妻，希望打造一個既簡潔又有溫度的家。以白色與淺木色為主調，透過材質的層次感創造視覺豐富度，開放式廚房與客廳的格局設計讓空間更加寬敞通透。', features:['開放式格局','訂製收納','木作天花','智慧照明','地暖系統'] },
+      { title:'天母 · 北歐風格透天', tag:'北歐風格', location:'台北市士林區天母', size:'82 坪', year:'2023', style:'北歐 Hygge', img:'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80', desc:'業主熱愛北歐旅行，希望將北歐的慵懶舒適感帶回家。以米白、鼠尾草綠與自然木材為主軸，大量使用天然材質，搭配精選北歐家具品牌，打造真正令人放鬆的 Hygge 生活氛圍。', features:['天然材質','北歐選物','壁爐設計','地板暖氣','大量自然採光'] },
+      { title:'大直 · 親子友善溫馨宅', tag:'溫馨現代', location:'台北市中山區大直', size:'45 坪', year:'2023', style:'溫馨現代', img:'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=800&q=80', desc:'兩個孩子的家庭，需要既安全又充滿創意的生活空間。設計了大量安全圓角家具、地板軟墊區，以及孩子們的專屬藝術牆。', features:['安全圓角設計','塗鴉牆','親子共讀角','智慧收納','防潮地板'] },
+      { title:'中山區 · 日式侘寂茶空間', tag:'日式侘寂', location:'台北市中山區', size:'28 坪', year:'2023', style:'日式侘寂', img:'https://images.unsplash.com/photo-1583845112239-97ef1341b271?w=800&q=80', desc:'這是一棟超過 30 年的老公寓翻新案。業主希望打造能沉澱心靈的茶空間。保留了部分舊有的水泥牆面，引入自然石材、竹材與手作陶器，詮釋侘寂美學中的殘缺之美。', features:['老屋格局調整','手工泥作牆','地板抬高設計','嵌入式展示架','竹材運用'] },
+      { title:'內湖 · 輕北歐單身公寓', tag:'北歐風格', location:'台北市內湖區', size:'22 坪', year:'2022', style:'輕北歐', img:'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80', desc:'為一位熱愛閱讀的單身設計師量身打造。大量的書牆設計搭配可移動的閱讀燈，白天充滿自然採光，夜晚則是柔和閱讀氛圍。', features:['書牆設計','臥榻臥室','隱藏式廚房','多功能工作桌','可調光系統'] },
+      { title:'信義區 · 25 年老公寓再生', tag:'老屋翻新', location:'台北市信義區', size:'38 坪', year:'2022', style:'現代混搭', img:'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80', desc:'屋主接手父母的老公寓，希望在保留家的記憶感的前提下全面更新。拆除部分隔間以改善採光，並重新規劃廚房與浴室管線，讓老房子有了全新面貌。', features:['隔間重整','廚浴管線更新','保留原木地板','新舊混搭', '採光優化'] },
+      { title:'南港 · 輕奢現代豪宅', tag:'現代奢華', location:'台北市南港區', size:'120 坪', year:'2022', style:'現代奢華', img:'https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=80', desc:'大坪數豪宅案，業主要求高端質感但不張揚的設計風格。以深色大理石、手工皮革與黃銅件為主要材料，在低調中展現精品居家品味。', features:['大理石地坪','手工皮革牆','黃銅燈具','酒窖設計','智慧家居系統'] },
+      { title:'木柵 · 和風靜謐山居', tag:'日式和風', location:'台北市文山區木柵', size:'65 坪', year:'2021', style:'日式和風', img:'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80', desc:'緊鄰山林的透天住宅，設計以「將自然引入室內」為核心。大面落地窗、室內植栽牆、天然石材與木材的組合，讓人在室內也能感受山林的寧靜。', features:['落地窗景觀','室內植栽牆','天然石材','木製格柵','戶外泡湯池'] },
+      { title:'大同區 · 40 年老宅重生', tag:'老屋翻新', location:'台北市大同區', size:'42 坪', year:'2021', style:'新舊融合', img:'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80', desc:'三代同堂的老宅翻新，需兼顧長輩的無障礙需求與年輕人的生活習慣。保留了原有的磨石子地板與老窗框，融入現代機能，讓新舊共存產生獨特溫度。', features:['無障礙設計','保留磨石子','老窗框再利用','共享客廳','獨立套房規劃'] },
+    ];
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

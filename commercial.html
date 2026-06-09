@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>商業案件 · 林雅晴室內設計</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">林雅晴</a>
+    <ul class="nav-links">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="about.html">關於</a></li>
+      <li><a href="residential.html">住家案件</a></li>
+      <li><a href="commercial.html" class="active">商業案件</a></li>
+      <li><a href="pricing.html">收費標準</a></li>
+      <li><a href="index.html#contact" class="nav-cta">聯絡我</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="menu">&#9776;</button>
+  </nav>
+  <div id="mobile-menu">
+    <button class="close-btn">&#10005;</button>
+    <ul>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="about.html">關於</a></li>
+      <li><a href="residential.html">住家案件</a></li>
+      <li><a href="commercial.html">商業案件</a></li>
+      <li><a href="pricing.html">收費標準</a></li>
+      <li><a href="index.html#contact">聯絡我</a></li>
+    </ul>
+  </div>
+  <div id="menu-overlay"></div>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80')">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="section-label">COMMERCIAL</span>
+      <h1>商業案件</h1>
+      <p>將品牌精神化為令人難忘的空間體驗</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="portfolio-intro">
+    <div class="portfolio-intro-inner">
+      <p>商業空間設計不只是讓空間好看，更要讓它有效運作——促進員工效率、提升顧客體驗、強化品牌印象。我擅長將業主的品牌DNA轉化為空間語言，打造讓人印象深刻的商業環境。</p>
+      <div class="intro-stats">
+        <div><strong>33</strong><span>件商業案</span></div>
+        <div><strong>辦公室 · 餐飲 · 零售 · 展覽</strong><span>各類型空間</span></div>
+        <div><strong>50 – 500+</strong><span>坪設計範疇</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter + Grid -->
+  <section id="portfolio">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="office">辦公室</button>
+      <button class="filter-btn" data-filter="restaurant">餐飲空間</button>
+      <button class="filter-btn" data-filter="retail">零售門市</button>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-item large" data-category="office" data-index="0">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80" alt="信義辦公室" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="0">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">辦公室</span>
+          <h3>信義區 · 科技公司總部</h3>
+          <p>320坪 · 開放辦公 · 2024</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="restaurant" data-index="1">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=700&q=80" alt="工業風餐廳" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="1">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">餐飲空間</span>
+          <h3>松山區 · 工業風義式餐廳</h3>
+          <p>65坪 · 80席 · 2022</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="retail" data-index="2">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80" alt="品牌門市" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="2">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">零售門市</span>
+          <h3>東區 · 台灣茶品牌旗艦店</h3>
+          <p>45坪 · 品牌門市 · 2024</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="office" data-index="3">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=700&q=80" alt="中山辦公室" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="3">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">辦公室</span>
+          <h3>中山區 · 設計公司創意工作室</h3>
+          <p>80坪 · 混合辦公 · 2023</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item large" data-category="restaurant" data-index="4">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80" alt="精緻料理" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="4">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">餐飲空間</span>
+          <h3>大安區 · 日式無菜單料理</h3>
+          <p>55坪 · 20席 · 2023</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="retail" data-index="5">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&q=80" alt="生活選品" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="5">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">零售門市</span>
+          <h3>永康街 · 北歐生活選品店</h3>
+          <p>35坪 · 選品門市 · 2022</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="office" data-index="6">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=700&q=80" alt="新創辦公" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="6">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">辦公室</span>
+          <h3>南港 · 生技公司研發中心</h3>
+          <p>180坪 · 複合機能 · 2022</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="restaurant" data-index="7">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=700&q=80" alt="咖啡廳" />
+          <div class="portfolio-overlay"><button class="view-btn" data-index="7">查看詳情</button></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">餐飲空間</span>
+          <h3>民生社區 · 老宅改造咖啡廳</h3>
+          <p>40坪 · 50席 · 2021</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close">&#10005;</button>
+      <div class="modal-body">
+        <div class="modal-gallery"><img id="modal-img" src="" alt="" /></div>
+        <div class="modal-info">
+          <span id="modal-tag" class="portfolio-tag"></span>
+          <h2 id="modal-title"></h2>
+          <div class="modal-meta">
+            <div><label>地點</label><span id="modal-location"></span></div>
+            <div><label>規模</label><span id="modal-size"></span></div>
+            <div><label>完工年份</label><span id="modal-year"></span></div>
+            <div><label>空間類型</label><span id="modal-style"></span></div>
+          </div>
+          <p id="modal-desc"></p>
+          <div class="modal-tags" id="modal-features"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section id="about-cta">
+    <div class="simple-cta">
+      <h2>為你的品牌打造專屬空間</h2>
+      <p>預約免費初次商業諮詢，讓空間成為你最有力的品牌資產</p>
+      <div class="cta-btns">
+        <a href="pricing.html" class="btn-primary">查看收費標準</a>
+        <a href="index.html#contact" class="btn-outline">預約諮詢</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <p class="footer-logo">林雅晴 室內設計</p>
+        <p class="footer-en">Ya-Ching Lin Interior Design Studio</p>
+        <p class="footer-copy">© 2026 林雅晴室內設計工作室。保留所有權利。</p>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於</a>
+        <a href="residential.html">住家案件</a>
+        <a href="commercial.html">商業案件</a>
+        <a href="pricing.html">收費標準</a>
+        <a href="index.html#contact">聯絡</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const projects = [
+      { title:'信義區 · 科技公司總部', tag:'辦公室', location:'台北市信義區', size:'320 坪', year:'2024', style:'現代工業辦公', img:'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80', desc:'為一家快速成長的科技新創公司打造全新辦公環境。以品牌色彩為設計語言，融合開放協作區與靜謐專注區，並設計多個非正式會議空間，促進員工自然互動與創意激盪。', features:['開放辦公','電話亭隔音艙','品牌牆設計','員工休憩區','模組化家具'] },
+      { title:'松山區 · 工業風義式餐廳', tag:'餐飲空間', location:'台北市松山區', size:'65 坪 · 80 席', year:'2022', style:'工業混搭', img:'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&q=80', desc:'業主希望打造讓客人一走進來就有置身義大利米蘭的錯覺。以裸露磚牆、黑鐵件與木紋為主要材料，搭配溫暖的琥珀色燈光，製造粗獷中帶有溫度的工業浪漫氣息。', features:['裸露磚牆','黑鐵件家具','訂製吧台','酒窖展示','可調光系統'] },
+      { title:'東區 · 台灣茶品牌旗艦店', tag:'零售門市', location:'台北市大安區東區', size:'45 坪', year:'2024', style:'現代東方', img:'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80', desc:'台灣本土茶葉品牌的旗艦店，以「現代東方」為設計主軸。大量使用竹材、手工陶器與天然石材，並設置試飲區讓顧客體驗茶文化，強化品牌的文化底蘊。', features:['訂製木展示架','試飲體驗區','竹材天花','品牌識別牆','自然採光設計'] },
+      { title:'中山區 · 設計公司創意工作室', tag:'辦公室', location:'台北市中山區', size:'80 坪', year:'2023', style:'創意混搭', img:'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&q=80', desc:'一家設計公司的辦公室，本身就是最好的作品集展示。以白色為主調搭配大膽的彩色點綴，保留清水混凝土天花，打造一個兼具視覺衝擊與工作效率的創意空間。', features:['清水混凝土','彩色點綴牆','大型展示區','彈性會議空間','休憩吧台'] },
+      { title:'大安區 · 日式無菜單料理', tag:'餐飲空間', location:'台北市大安區', size:'55 坪 · 20 席', year:'2023', style:'現代日式', img:'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80', desc:'高端無菜單日料餐廳，每一席座位都是獨立的用餐體驗。以深色木材、手工陶瓦與精緻燈光塑造沉浸式的用餐氛圍，配合主廚料理節奏設計的燈光變化系統為最大亮點。', features:['包廂式座席','訂製燈光系統','木材清水牆','吧台廚師座','清酒展示架'] },
+      { title:'永康街 · 北歐生活選品店', tag:'零售門市', location:'台北市大安區永康街', size:'35 坪', year:'2022', style:'北歐零售', img:'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80', desc:'引進北歐設計品牌的選品店，店面設計本身就是最好的產品展示。以淺木色系與白色為底，搭配精心規劃的展示動線，讓每一件商品都能以最好的姿態被看見。', features:['靈活展示系統','弧形展示台','試用體驗區','大型窗景設計','收銀台訂製'] },
+      { title:'南港 · 生技公司研發中心', tag:'辦公室', location:'台北市南港區', size:'180 坪', year:'2022', style:'功能現代', img:'https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80', desc:'生技公司的研發辦公室需要兼顧實驗室規格與一般辦公機能。以淺灰與白色為基調，強調潔淨感，同時透過植栽牆與自然採光緩和長時間工作的壓力。', features:['潔淨室規格','植栽牆設計','彈性隔間系統','大型儲存規劃','空氣品質監控'] },
+      { title:'民生社區 · 老宅改造咖啡廳', tag:'餐飲空間', location:'台北市松山區民生社區', size:'40 坪 · 50 席', year:'2021', style:'老宅風情', img:'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80', desc:'民生社區的 50 年老宅改造咖啡廳。保留了原有的紅磚牆、花磚地板與老式木窗框，與現代的吧台設備形成新舊對話，成為社區居民最喜愛的日常角落。', features:['花磚地板保留','老窗框再利用','紅磚牆暴露','訂製木吧台','老式吊燈改造'] },
+    ];
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
