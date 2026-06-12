@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>百貨中島櫃平面配置圖</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #e8e4dc; font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif; padding: 24px; }
+  .container { background: white; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); max-width: 1280px; margin: 0 auto; padding: 28px; }
+  h1 { text-align: center; font-size: 22px; color: #2c1a0e; margin-bottom: 4px; }
+  .subtitle { text-align: center; color: #888; font-size: 13px; margin-bottom: 20px; }
+  svg { display: block; width: 100%; height: auto; }
+  .legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 18px; font-size: 13px; padding: 14px 16px; background: #faf8f4; border-radius: 6px; border: 1px solid #e0d8cc; }
+  .legend-item { display: flex; align-items: center; gap: 7px; }
+  .legend-box { width: 22px; height: 14px; border-radius: 3px; border: 1.5px solid #7a5535; flex-shrink: 0; }
+  .notes { margin-top: 16px; font-size: 13px; color: #555; line-height: 1.8; background: #f7f5f0; padding: 14px 16px; border-radius: 6px; border-left: 4px solid #c8956e; }
+  .notes strong { color: #2c1a0e; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>百貨中島櫃 — 平面配置圖</h1>
+  <p class="subtitle">空間總尺寸：11050 × 7345 mm &nbsp;｜&nbsp; 單位：mm &nbsp;｜&nbsp; 比例 1:55</p>
+
+  <svg viewBox="-750 -700 12650 9000" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#c0392b"/>
+      </marker>
+      <marker id="arr2" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#c0392b"/>
+      </marker>
+      <!-- floor tile pattern -->
+      <pattern id="tile" x="0" y="0" width="300" height="300" patternUnits="userSpaceOnUse">
+        <rect width="300" height="300" fill="#f5f2eb"/>
+        <rect width="298" height="298" x="1" y="1" fill="none" stroke="#e8e2d8" stroke-width="1"/>
+      </pattern>
+      <!-- shelf hatch -->
+      <pattern id="hatch" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <rect width="30" height="30" fill="#d4a96a"/>
+        <line x1="15" y1="0" x2="15" y2="30" stroke="#b8863a" stroke-width="3" opacity="0.4"/>
+      </pattern>
+    </defs>
+
+    <!-- ===== ROOM BACKGROUND ===== -->
+    <rect x="0" y="0" width="11050" height="7345" fill="url(#tile)" stroke="#2c2820" stroke-width="55"/>
+
+    <!-- ===== COLUMN WRAP CABINETS (包柱壁櫃) ===== -->
+    <!-- Left column wrap zone -->
+    <rect x="0" y="745" width="1900" height="1900" fill="#c8926a" stroke="#7a4e2a" stroke-width="22"/>
+    <!-- shelf lines on exposed faces -->
+    <line x1="1900" y1="745" x2="1900" y2="2645" stroke="#7a4e2a" stroke-width="3" opacity="0.6"/>
+    <line x1="0"    y1="2645" x2="1900" y2="2645" stroke="#7a4e2a" stroke-width="3" opacity="0.6"/>
+    <line x1="1900" y1="1100" x2="1900" y2="1100" stroke="#7a4e2a" stroke-width="8"/>
+    <!-- column structural -->
+    <rect x="350" y="1095" width="1200" height="1200" fill="#7a7670" stroke="#3a3530" stroke-width="18"/>
+    <!-- column label -->
+    <text x="700" y="1030" text-anchor="middle" font-size="115" fill="#f0ebe0" font-weight="bold">柱</text>
+    <!-- wrap label -->
+    <text x="1540" y="1780" text-anchor="middle" font-size="125" fill="#2c1a0e" font-weight="bold">包柱壁櫃</text>
+
+    <!-- Right column wrap zone -->
+    <rect x="9150" y="745" width="1900" height="1900" fill="#c8926a" stroke="#7a4e2a" stroke-width="22"/>
+    <line x1="9150" y1="745"  x2="9150" y2="2645" stroke="#7a4e2a" stroke-width="3" opacity="0.6"/>
+    <line x1="9150" y1="2645" x2="11050" y2="2645" stroke="#7a4e2a" stroke-width="3" opacity="0.6"/>
+    <rect x="9500" y="1095" width="1200" height="1200" fill="#7a7670" stroke="#3a3530" stroke-width="18"/>
+    <text x="10350" y="1030" text-anchor="middle" font-size="115" fill="#f0ebe0" font-weight="bold">柱</text>
+    <text x="9510" y="1780" text-anchor="middle" font-size="125" fill="#2c1a0e" font-weight="bold">包柱壁櫃</text>
+
+    <!-- ===== PERIMETER SHELVING (層架) ===== -->
+
+    <!-- Top-left corner strip (above col wrap) -->
+    <rect x="0" y="0" width="500" height="745" fill="url(#hatch)" stroke="#7a4e2a" stroke-width="15"/>
+
+    <!-- Top center wall shelf -->
+    <rect x="1900" y="0" width="7250" height="500" fill="url(#hatch)" stroke="#7a4e2a" stroke-width="15"/>
+    <!-- top shelf detail lines (shelf boards) -->
+    <line x1="1900" y1="165" x2="9150" y2="165" stroke="#b8863a" stroke-width="8" opacity="0.5"/>
+    <line x1="1900" y1="330" x2="9150" y2="330" stroke="#b8863a" stroke-width="8" opacity="0.5"/>
+    <text x="5525" y="370" text-anchor="middle" font-size="270" fill="#2c1a0e" font-weight="bold">層架</text>
+
+    <!-- Top-right corner strip -->
+    <rect x="10550" y="0" width="500" height="745" fill="url(#hatch)" stroke="#7a4e2a" stroke-width="15"/>
+
+    <!-- Left lower wall shelf (below col wrap) -->
+    <rect x="0" y="2645" width="500" height="4200" fill="url(#hatch)" stroke="#7a4e2a" stroke-width="15"/>
+    <line x1="165" y1="2645" x2="165" y2="6845" stroke="#b8863a" stroke-width="8" opacity="0.5"/>
+    <line x1="330" y1="2645" x2="330" y2="6845" stroke="#b8863a" stroke-width="8" opacity="0.5"/>
+    <text x="250" y="4745" text-anchor="middle" font-size="240" fill="#2c1a0e" font-weight="bold" transform="rotate(-90 250 4745)">層架</text>
+
+    <!-- Right lower wall shelf -->
+    <rect x="10550" y="2645" width="500" height="4200" fill="url(#hatch)" stroke="#7a4e2a" stroke-width="15"/>
+    <line x1="10715" y1="2645" x2="10715" y2="6845" stroke="#b8863a" stroke-width="8" opacity="0.5"/>
+    <line x1="10880" y1="2645" x2="10880" y2="6845" stroke="#b8863a" stroke-width="8" opacity="0.5"/>
+    <text x="10800" y="4745" text-anchor="middle" font-size="240" fill="#2c1a0e" font-weight="bold" transform="rotate(90 10800 4745)">層架</text>
+
+    <!-- Bottom wall shelf -->
+    <rect x="0" y="6845" width="11050" height="500" fill="url(#hatch)" stroke="#7a4e2a" stroke-width="15"/>
+    <line x1="0" y1="7010" x2="11050" y2="7010" stroke="#b8863a" stroke-width="8" opacity="0.5"/>
+    <line x1="0" y1="7175" x2="11050" y2="7175" stroke="#b8863a" stroke-width="8" opacity="0.5"/>
+    <text x="5525" y="7200" text-anchor="middle" font-size="270" fill="#2c1a0e" font-weight="bold">層架</text>
+
+    <!-- ===== INNER GONDOLA SHELVES (內部貨架) ===== -->
+
+    <!-- Left inner gondola A -->
+    <rect x="1800" y="2800" width="550" height="3000" fill="#e2c070" stroke="#8b5c1a" stroke-width="15"/>
+    <line x1="1800" y1="3250" x2="2350" y2="3250" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="1800" y1="3700" x2="2350" y2="3700" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="1800" y1="4150" x2="2350" y2="4150" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="1800" y1="4600" x2="2350" y2="4600" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="1800" y1="5050" x2="2350" y2="5050" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="1800" y1="5500" x2="2350" y2="5500" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <text x="2075" y="4500" text-anchor="middle" font-size="200" fill="#2c1a0e" font-weight="bold" transform="rotate(-90 2075 4500)">貨架 550×3000</text>
+
+    <!-- Left inner gondola B -->
+    <rect x="2700" y="2800" width="550" height="3000" fill="#e2c070" stroke="#8b5c1a" stroke-width="15"/>
+    <line x1="2700" y1="3250" x2="3250" y2="3250" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="2700" y1="3700" x2="3250" y2="3700" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="2700" y1="4150" x2="3250" y2="4150" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="2700" y1="4600" x2="3250" y2="4600" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="2700" y1="5050" x2="3250" y2="5050" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="2700" y1="5500" x2="3250" y2="5500" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <text x="2975" y="4500" text-anchor="middle" font-size="200" fill="#2c1a0e" font-weight="bold" transform="rotate(-90 2975 4500)">貨架 550×3000</text>
+
+    <!-- Right inner gondola A -->
+    <rect x="8200" y="2800" width="550" height="3000" fill="#e2c070" stroke="#8b5c1a" stroke-width="15"/>
+    <line x1="8200" y1="3250" x2="8750" y2="3250" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="8200" y1="3700" x2="8750" y2="3700" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="8200" y1="4150" x2="8750" y2="4150" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="8200" y1="4600" x2="8750" y2="4600" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="8200" y1="5050" x2="8750" y2="5050" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="8200" y1="5500" x2="8750" y2="5500" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <text x="8475" y="4500" text-anchor="middle" font-size="200" fill="#2c1a0e" font-weight="bold" transform="rotate(90 8475 4500)">貨架 550×3000</text>
+
+    <!-- Right inner gondola B -->
+    <rect x="7300" y="2800" width="550" height="3000" fill="#e2c070" stroke="#8b5c1a" stroke-width="15"/>
+    <line x1="7300" y1="3250" x2="7850" y2="3250" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="7300" y1="3700" x2="7850" y2="3700" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="7300" y1="4150" x2="7850" y2="4150" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="7300" y1="4600" x2="7850" y2="4600" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="7300" y1="5050" x2="7850" y2="5050" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <line x1="7300" y1="5500" x2="7850" y2="5500" stroke="#8b5c1a" stroke-width="8" opacity="0.5"/>
+    <text x="7575" y="4500" text-anchor="middle" font-size="200" fill="#2c1a0e" font-weight="bold" transform="rotate(90 7575 4500)">貨架 550×3000</text>
+
+    <!-- ===== CENTRAL PRODUCT DISPLAY (主題產品櫃 2760×1760) ===== -->
+    <!-- shadow -->
+    <rect x="4165" y="2812" width="2760" height="1760" fill="rgba(0,0,0,0.12)" rx="8"/>
+    <!-- main body -->
+    <rect x="4145" y="2792" width="2760" height="1760" fill="#8b5e35" stroke="#4a2d10" stroke-width="28" rx="6"/>
+    <!-- inner panel -->
+    <rect x="4265" y="2912" width="2520" height="1520" fill="#a0703d" stroke="#c8956e" stroke-width="12" rx="4"/>
+    <!-- top accent strip -->
+    <rect x="4145" y="2792" width="2760" height="80" fill="#c8956e" rx="6"/>
+    <!-- display text -->
+    <text x="5525" y="3480" text-anchor="middle" font-size="235" fill="white" font-weight="bold" letter-spacing="8">主題產品櫃</text>
+    <text x="5525" y="3720" text-anchor="middle" font-size="175" fill="#f0d8b8">2760 × 1760 mm</text>
+    <!-- dimension tick marks on display -->
+    <line x1="4145" y1="2750" x2="6905" y2="2750" stroke="#c8956e" stroke-width="10"/>
+    <line x1="4145" y1="2720" x2="4145" y2="2780" stroke="#c8956e" stroke-width="10"/>
+    <line x1="6905" y1="2720" x2="6905" y2="2780" stroke="#c8956e" stroke-width="10"/>
+    <text x="5525" y="2710" text-anchor="middle" font-size="140" fill="#c8956e">2760</text>
+
+    <!-- ===== CASHIER COUNTER (收銀台) ===== -->
+    <!-- shadow -->
+    <rect x="4315" y="5590" width="2420" height="730" fill="rgba(0,0,0,0.10)" rx="5"/>
+    <!-- body -->
+    <rect x="4295" y="5570" width="2420" height="730" fill="#3a6e9c" stroke="#1e4060" stroke-width="22" rx="5"/>
+    <!-- top counter surface -->
+    <rect x="4295" y="5570" width="2420" height="120" fill="#5a90bc" rx="5"/>
+    <!-- POS terminal icon -->
+    <rect x="5820" y="5630" width="230" height="280" fill="#2c5070" rx="6"/>
+    <rect x="5840" y="5648" width="190" height="140" fill="#7ab0d4" rx="3"/>
+    <rect x="5870" y="5798" width="130" height="25" fill="#3a7aa0" rx="3"/>
+    <!-- label -->
+    <text x="5200" y="5980" text-anchor="middle" font-size="230" fill="white" font-weight="bold">收銀台</text>
+    <!-- counter dim label -->
+    <text x="5505" y="6380" text-anchor="middle" font-size="130" fill="#6aadde">2420 × 730 mm</text>
+
+    <!-- ===== CIRCULATION PATH (環繞動線) ===== -->
+
+    <!-- Outer loop – shown as dashed path going around perimeter shelving, skipping col wrap zones -->
+    <!-- This path is inside the perimeter (at outer aisle boundary) -->
+    <path d="
+      M 1900,600
+      L 9150,600
+      L 10650,600
+      L 10650,6745
+      L 500,6745
+      L 500,2750
+      L 1900,2750
+      Z
+    " fill="none" stroke="#c0392b" stroke-width="28" stroke-dasharray="130,65" opacity="0.75"/>
+
+    <!-- Inner loop – around central display area -->
+    <path d="
+      M 3450,2100
+      L 7600,2100
+      L 7600,6100
+      L 3450,6100
+      Z
+    " fill="none" stroke="#c0392b" stroke-width="18" stroke-dasharray="90,45" opacity="0.55"/>
+
+    <!-- Circulation direction arrows (clockwise) -->
+    <line x1="6700" y1="580"  x2="8000" y2="580"  stroke="#c0392b" stroke-width="22" marker-end="url(#arr)" opacity="0.75"/>
+    <line x1="10640" y1="2500" x2="10640" y2="4000" stroke="#c0392b" stroke-width="22" marker-end="url(#arr)" opacity="0.75"/>
+    <line x1="4300" y1="6740" x2="2800" y2="6740"  stroke="#c0392b" stroke-width="22" marker-end="url(#arr)" opacity="0.75"/>
+    <line x1="510"  y1="4500" x2="510"  y2="3000"  stroke="#c0392b" stroke-width="22" marker-end="url(#arr)" opacity="0.75"/>
+
+    <!-- ===== ENTRANCE MARKS (四向入口) ===== -->
+
+    <!-- Top entrance -->
+    <rect x="4825" y="-520" width="1400" height="440" fill="#c0392b" rx="8" opacity="0.9"/>
+    <text x="5525" y="-245" text-anchor="middle" font-size="200" fill="white" font-weight="bold">上方入口</text>
+    <line x1="5525" y1="-80" x2="5525" y2="0" stroke="#c0392b" stroke-width="40" marker-end="url(#arr)"/>
+
+    <!-- Bottom entrance -->
+    <rect x="4825" y="7440" width="1400" height="440" fill="#c0392b" rx="8" opacity="0.9"/>
+    <text x="5525" y="7700" text-anchor="middle" font-size="200" fill="white" font-weight="bold">下方入口</text>
+    <line x1="5525" y1="7425" x2="5525" y2="7345" stroke="#c0392b" stroke-width="40" marker-end="url(#arr)"/>
+
+    <!-- Left entrance -->
+    <rect x="-680" y="3410" width="560" height="520" fill="#c0392b" rx="8" opacity="0.9"/>
+    <text x="-400" y="3560" text-anchor="middle" font-size="190" fill="white" font-weight="bold">左</text>
+    <text x="-400" y="3780" text-anchor="middle" font-size="190" fill="white" font-weight="bold">入口</text>
+    <line x1="-120" y1="3672" x2="0" y2="3672" stroke="#c0392b" stroke-width="40" marker-end="url(#arr)"/>
+
+    <!-- Right entrance -->
+    <rect x="11170" y="3410" width="560" height="520" fill="#c0392b" rx="8" opacity="0.9"/>
+    <text x="11450" y="3560" text-anchor="middle" font-size="190" fill="white" font-weight="bold">右</text>
+    <text x="11450" y="3780" text-anchor="middle" font-size="190" fill="white" font-weight="bold">入口</text>
+    <line x1="11170" y1="3672" x2="11050" y2="3672" stroke="#c0392b" stroke-width="40" marker-end="url(#arr)"/>
+
+    <!-- ===== AISLE WIDTH CALLOUTS ===== -->
+    <!-- Main outer aisle width (right side) -->
+    <line x1="10570" y1="4000" x2="10650" y2="4000" stroke="#555" stroke-width="10"/>
+    <line x1="10650" y1="4000" x2="10650" y2="5000" stroke="#555" stroke-width="10"/>
+    <line x1="10650" y1="5000" x2="10570" y2="5000" stroke="#555" stroke-width="10"/>
+    <text x="10750" y="4550" text-anchor="start" font-size="150" fill="#444">主通道</text>
+    <text x="10750" y="4730" text-anchor="start" font-size="150" fill="#444">≈1000mm</text>
+
+    <!-- Inner aisle (between gondola and central display) -->
+    <line x1="3250" y1="3672" x2="4145" y2="3672" stroke="#888" stroke-width="12" stroke-dasharray="40,20"/>
+    <text x="3700" y="3550" text-anchor="middle" font-size="140" fill="#666">850mm</text>
+
+    <!-- ===== OVERALL DIMENSION LINES ===== -->
+    <!-- Width -->
+    <line x1="0"     y1="7560" x2="11050" y2="7560" stroke="#333" stroke-width="14"/>
+    <line x1="0"     y1="7490" x2="0"     y2="7630" stroke="#333" stroke-width="14"/>
+    <line x1="11050" y1="7490" x2="11050" y2="7630" stroke="#333" stroke-width="14"/>
+    <text x="5525"   y="7770" text-anchor="middle" font-size="210" fill="#222">11050 mm</text>
+
+    <!-- Height -->
+    <line x1="-480" y1="0"    x2="-480" y2="7345" stroke="#333" stroke-width="14"/>
+    <line x1="-550" y1="0"    x2="-410" y2="0"    stroke="#333" stroke-width="14"/>
+    <line x1="-550" y1="7345" x2="-410" y2="7345" stroke="#333" stroke-width="14"/>
+    <text x="-480"  y="3672"  text-anchor="middle" font-size="210" fill="#222" transform="rotate(-90 -480 3672)">7345 mm</text>
+
+    <!-- Sub-dimensions (horizontal) -->
+    <!-- 350 | 1200 | 7950 | 1200 | 350 (original PDF dims) -->
+    <line x1="0"    y1="7910" x2="350"  y2="7910" stroke="#888" stroke-width="10"/>
+    <text x="175"   y="8080" text-anchor="middle" font-size="155" fill="#666">350</text>
+    <line x1="350"  y1="7910" x2="1550" y2="7910" stroke="#888" stroke-width="10"/>
+    <text x="950"   y="8080" text-anchor="middle" font-size="155" fill="#666">1200</text>
+    <line x1="1550" y1="7910" x2="9500" y2="7910" stroke="#888" stroke-width="10"/>
+    <text x="5525"  y="8080" text-anchor="middle" font-size="155" fill="#666">7950</text>
+    <line x1="9500" y1="7910" x2="10700" y2="7910" stroke="#888" stroke-width="10"/>
+    <text x="10100" y="8080" text-anchor="middle" font-size="155" fill="#666">1200</text>
+    <line x1="10700" y1="7910" x2="11050" y2="7910" stroke="#888" stroke-width="10"/>
+    <text x="10875" y="8080" text-anchor="middle" font-size="155" fill="#666">350</text>
+
+    <!-- sub-dim tick marks -->
+    <line x1="0"     y1="7860" x2="0"     y2="7960" stroke="#888" stroke-width="10"/>
+    <line x1="350"   y1="7860" x2="350"   y2="7960" stroke="#888" stroke-width="10"/>
+    <line x1="1550"  y1="7860" x2="1550"  y2="7960" stroke="#888" stroke-width="10"/>
+    <line x1="9500"  y1="7860" x2="9500"  y2="7960" stroke="#888" stroke-width="10"/>
+    <line x1="10700" y1="7860" x2="10700" y2="7960" stroke="#888" stroke-width="10"/>
+    <line x1="11050" y1="7860" x2="11050" y2="7960" stroke="#888" stroke-width="10"/>
+
+    <!-- Sub-dimensions (vertical) -->
+    <line x1="-680" y1="0"    x2="-680" y2="1095"  stroke="#888" stroke-width="10"/>
+    <text x="-720"  y="547"   text-anchor="end" font-size="145" fill="#666">1095</text>
+    <line x1="-680" y1="1095" x2="-680" y2="2295"  stroke="#888" stroke-width="10"/>
+    <text x="-720"  y="1695"  text-anchor="end" font-size="145" fill="#666">1200</text>
+    <line x1="-680" y1="2295" x2="-680" y2="7345"  stroke="#888" stroke-width="10"/>
+    <text x="-720"  y="4820"  text-anchor="end" font-size="145" fill="#666">5050</text>
+
+    <line x1="-640" y1="0"    x2="-720" y2="0"    stroke="#888" stroke-width="10"/>
+    <line x1="-640" y1="1095" x2="-720" y2="1095" stroke="#888" stroke-width="10"/>
+    <line x1="-640" y1="2295" x2="-720" y2="2295" stroke="#888" stroke-width="10"/>
+    <line x1="-640" y1="7345" x2="-720" y2="7345" stroke="#888" stroke-width="10"/>
+
+    <!-- North arrow -->
+    <g transform="translate(11200, -400)">
+      <circle cx="0" cy="0" r="200" fill="white" stroke="#333" stroke-width="15"/>
+      <polygon points="0,-170 -60,60 0,20 60,60" fill="#333"/>
+      <polygon points="0,170 -60,-60 0,-20 60,-60" fill="#ccc"/>
+      <text x="0" y="-215" text-anchor="middle" font-size="160" fill="#333" font-weight="bold">N</text>
+    </g>
+
+  </svg>
+
+  <!-- Legend -->
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-box" style="background:#c8926a;"></div>
+      <span>包柱壁櫃（柱體展示櫃）</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background:#d4a96a; background-image: repeating-linear-gradient(45deg, transparent, transparent 6px, rgba(0,0,0,0.15) 6px, rgba(0,0,0,0.15) 9px);"></div>
+      <span>層架（牆面陳列架）</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background:#e2c070;"></div>
+      <span>島中貨架（自由式展示架）</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background:#8b5e35;"></div>
+      <span>主題產品櫃 2760×1760mm</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background:#3a6e9c;"></div>
+      <span>收銀台</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background:#7a7670;"></div>
+      <span>結構柱</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background:white; border: 2px dashed #c0392b;"></div>
+      <span>環繞動線</span>
+    </div>
+  </div>
+
+  <div class="notes">
+    <strong>配置說明</strong><br>
+    • <strong>四向入口：</strong>上下左右均設入口，環繞式動線確保顧客可完整逛完整個中島區域<br>
+    • <strong>包柱壁櫃：</strong>左上、右上兩根結構柱各包覆 1900×1900mm 壁櫃，柱面化為陳列展示面，充分利用死角空間<br>
+    • <strong>主通道（外環）：</strong>緊鄰牆面層架內側，寬度約 1000mm，符合百貨商場人行動線標準<br>
+    • <strong>層架（牆面）：</strong>四面牆設深度 500mm 層架，提供最大陳列量，可陳列包包、配件、季節商品等<br>
+    • <strong>島中貨架 ×4：</strong>左右各兩排 550×3000mm 自由式貨架，與主題產品櫃之間留有 850mm 次通道<br>
+    • <strong>主題產品櫃：</strong>2760×1760mm，位居空間正中央，作為視覺焦點與精品展示用途<br>
+    • <strong>收銀台：</strong>置於主題櫃正下方、靠近下方入口，面向主動線，結帳動線流暢不干擾瀏覽
+  </div>
+</div>
+</body>
+</html>
